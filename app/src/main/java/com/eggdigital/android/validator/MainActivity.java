@@ -18,11 +18,16 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		boolean isEmail = EggValidator.isValidEmail("jj@yahoo.com", true, EmailOption.GMAIL, EmailOption.HOTMAIL);
-		Log.e("jj@gmail.com", isEmail + " ");
 
-//		EggValidator.wow("AAA", "BBB", "CCC", "DDD");
+		boolean isEmail = EggValidator.isValidEmail("simple@gmail.com", EmailOption.GMAIL);
+		Log.d("simple@gmail.com", isEmail + " ");
+		boolean isEmail2 = EggValidator.isValidEmail("jj@yahoo.com", true, EmailOption.GMAIL, EmailOption.HOTMAIL);
+		Log.d("jj@gmail.com", isEmail2 + " ");
 
+		boolean phone1 = EggValidator.isValidPhone("0800560032", 8);
+		boolean phone2 = EggValidator.isValidPhone("0600560032", 8);
+		Log.d("0800560032", phone1 + " ");
+		Log.d("0600560032", phone2 + " ");
 
 		Log.d("Tahiid", EggValidator.isValidThaiId("1234567890124") + "");
 		Log.d("Tahiid", EggValidator.isValidThaiId("1629900233665") + "");
