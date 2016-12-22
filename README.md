@@ -45,3 +45,6 @@ boolean phone2 = EggValidator.isValidPhone("0600560032", true, 8); // true
 ```
 boolean thaiId = EggValidator.isValidThaiId("1234567890124");
 ```
+# License
+Licensed under the Apache License, Version 2.0 (the "License").<br/>
+https://www.apache.org/licenses/LICENSE-2.0
