@@ -1,6 +1,12 @@
+![platform](https://img.shields.io/badge/platform-android-green.svg)
+
 # egg-validator
 use for validation email, mobile phone, Thai ID.
 # Installation
+**Gradle**
+```
+compile 'com.eggdigital.android:egg-validator:1.0.0'
+```
 # Usage
 ### Email Validation
 **Normal**
